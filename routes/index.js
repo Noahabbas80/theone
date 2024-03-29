@@ -454,6 +454,7 @@ let trivia = [{
 
 router.get("/", async (req,res)=>{ 
     try{
+      res.setHeader("Access-Control-Allow-Origin", "*");
         res.json({potato: 'yummy'})
     }
     catch (error){
@@ -478,9 +479,11 @@ module.exports = router
 function getParam(res,req){
     console.log(req.params.game)
     if(req.params.game == 'gp'){
+      res.setHeader("Access-Control-Allow-Origin", "*");
         res.json(trivia[req.params.id ])
     }
     if(req.params.game == 'dt'){
+      res.setHeader("Access-Control-Allow-Origin", "*");
         res.json(data[req.params.id ])
     }
 }
