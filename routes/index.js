@@ -3,7 +3,12 @@ const router = new express.Router()
 const app = express()
 const cors = require('cors')
 
-app.use(cors())
+app.use(
+  cors({
+    origin: "*"
+  }
+
+))
 let data = [
     {
       question: 'What percentage of sophmores own an Android phone',
