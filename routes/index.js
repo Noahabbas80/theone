@@ -1,5 +1,7 @@
 const express = require("express")
 const router = new express.Router()
+const app = express()
+app.use(cors())
 
 let data = [
     {
