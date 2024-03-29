@@ -160,6 +160,7 @@ let data = [
       no: 71,
       percent: 13
     },
+    //nte
     {
       question: 'What percentage of sophmores plan in advance for April Fools Day',
       yes: 18,
