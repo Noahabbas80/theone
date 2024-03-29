@@ -1,8 +1,9 @@
 const express = require("express")
 const router = new express.Router()
 const app = express()
-app.use(cors())
+const cors = require('cors')
 
+app.use(cors)
 let data = [
     {
       question: 'What percentage of sophmores own an Android phone',
