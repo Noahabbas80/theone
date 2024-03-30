@@ -9,6 +9,233 @@ app.use(
   }
 
 ))
+
+
+
+let trivia = [
+  {
+    question: `when was the first trailer for the indie game "OMORI" released?`,
+    a: 2016,
+    b: 2017,
+    c: 2014,
+    d: 2019,
+    answer: 'c'
+},
+{
+    question: `what year was staten island technical high school established?`,
+    a: 1988,
+    b: 1963,
+    c: 1971,
+    d: 1978,
+    answer: 'a'
+},
+{
+    question: `which one of these options isn't a store you can near hylan blvd & new dorp lane?`,
+    a: `Chic'n Go`,
+    b: '7-11',
+    c: 'Cold Stone',
+    d: 'Bravo Pizza',
+    answer: 'a'
+},  
+{
+    question: `in the anime spy x family, what is the name of Loid's telepathic daughter?`,
+    a: `Yor Forger`,
+    b: 'Misty Forger',
+    c: 'Frankie Forger',
+    d: 'Anya Forger',
+    answer: 'd'
+},  
+{
+    question: `which one of these pokemon resist the ground type`,
+    a: `crustle`,
+    b: 'sunflora',
+    c: 'raichu',
+    d: 'quagsire',
+    answer: 'b'
+},  
+{
+    question: `in the show avatar: the last airbender, what is the last element that aang masters`,
+    a: `water`,
+    b: 'earth',
+    c: 'fire',
+    d: 'air',
+    answer: 'c'
+},  
+{
+    question: `the comic book hero anti-venom was created when which character used his healing powers on venom?`,
+    a: `deathstroke`,
+    b: 'magneto',
+    c: 'deadpool',
+    d: 'mr. negative',
+    answer: 'd'
+},  
+{
+    question: `which one of these clubs do not meet on a wednesday?`,
+    a: `game development club`,
+    b: 'glee club',
+    c: 'literary magazine',
+    d: 'tech science times',
+    answer: 'd'
+},  
+{
+    question: `what was the name given to minecraft update 1.16?`,
+    a: `combat update`,
+    b: 'nether update',
+    c: 'village & pillage update',
+    d: 'combat update',
+    answer: 'b'
+},  
+{
+    question: `taylor swifts boyfriend plays for which nfl team?`,
+    a: `green bay packers`,
+    b: 'dallas cowboys',
+    c: 'kansas city chiefs',
+    d: 'san francisco 49ers',
+    answer: 'c'
+},  
+{
+    question: `an elementary charge is equal to 10¹⁶ times...`,
+    a: `7.53`,
+    b: '1.32',
+    c: '1.60',
+    d: '9.81',
+    answer: 'c'
+},
+{
+  question: `in the critically acclaimed indie game "Outer Wilds", which one of these charaters is not a traveler`,
+  a: "Feldspar",
+  b: "Chert",
+  c: "Riebeck",
+  d: "Secca",
+  answer: 'd'
+},
+{
+  question: `in "The Alchemist" by paulo coelho, the location of Santiago's treasure is... `,
+  a: 'under a sycamore tree',
+  b: 'inside a pyramid',
+  c: 'Mecca',
+  d: 'above the clouds',
+  answer: 'a'
+},
+{
+  question: `which one of these characters is a friend of hello kitty`,
+  a: 'my melody',
+  b: 'hotcake',
+  c: 'sugar rush',
+  d: 'bluey ',
+  answer: 'a'
+},
+{
+  question: `Which Staten Island Tech staff member used to teach a SERP class`,
+  a: 'Ms. Ferrigno',
+  b: 'Mr. Rams',
+  c: 'Ms. Cavaliere',
+  d: 'Ms. Brandon',
+  answer: 'c'
+},
+{
+  question: `The offical shade of gold used as SITHS' offical color is...`,
+  a: 'Sepia',
+  b: 'Vegas Gold',
+  c: 'Buttermilk Gold',
+  d: 'Elastic Gold',
+  answer: 'b'
+},
+{
+  question: `Which one of these Noahs is not currently a sophmore as of 2023-2024`,
+  a: 'Noah Abbas',
+  b: 'Noah Boyle',
+  c: 'Noah Rozin',
+  d: 'Noah Gontha',
+  answer: 'b'
+},
+{
+  question: `Mr. Whalen's favorite pokemon is...`,
+  a: 'cherrim',
+  b: 'abomasnow',
+  c: 'farigiraf',
+  d: 'lucario',
+  answer: 'b'
+},
+{
+  question: `how many theses did Martin Luther write during the protestant reformation`,
+  a: 95,
+  b: 101,
+  c: 59,
+  d: 78,
+  answer: 'a'
+},
+{
+  question: `which challenge is Mr. Beast's SECOND most popular video`,
+  a: "$456,000 Squid Game In Real Life!",
+  b: "I Spent 50 Hours Buried Alive",
+  c: "I Spent 7 Days In Solitary Confinement",
+  d: "Last To Leave Circle Wins $500,000  ",
+  answer: 'd'
+},
+{
+  question: `Which one of these celebrities made a cameo in the Impractical Jokers movie`,
+  a: "Will Ferrell",
+  b: "Charli D'Amelio",
+  c: "Mr. Whalen",
+  d: "Chris Evans",
+  answer: 'a'
+},
+{
+  question: `Which one of these is not a event that SITHS has a team for`,
+  a: "SeaPeach",
+  b: "First Tech Challenge",
+  c: "Vex Robotics Competion",
+  d: "Science Olympaid",
+  answer: 'c'
+},
+{
+  question: `Which one of these smash brother characters was introduced in Melee`,
+  a: "Ness",
+  b: "Young Link",
+  c: "Little Mac",
+  d: "Pokemon Trainer",
+  answer: 'b'
+},
+{
+  question: `Who did NOT help make this website`,
+  a: "Izzy Zoltan",
+  b: "Rylan Geykhman",
+  c: "Gabriel Liberov ",
+  d: "Noah Abbas",
+  answer: 'c'
+},
+{
+  question: `What was the original title of the movie "Mean Girls"`,
+  a: 'Homeschooled',
+  b: 'Lipstick Ladies',
+  c: 'Plastic',
+  d: 'The Fetch Pledge',
+  answer: 'a'
+},
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let data = [
     {
       question: 'What percentage of sophmores own an Android phone',
@@ -361,95 +588,6 @@ let data = [
     }
   ]
 
-let trivia = [{
-    question: `when was the first trailer for the indie game "OMORI" released?`,
-    a: 2016,
-    b: 2017,
-    c: 2014,
-    d: 2019,
-    answer: 'c'
-},
-{
-    question: `what year was staten island technical high school established?`,
-    a: 1988,
-    b: 1963,
-    c: 1971,
-    d: 1978,
-    answer: 'a'
-},
-{
-    question: `which one of these options isn't a store you can near hylan blvd & new dorp lane?`,
-    a: `Chic'n Go`,
-    b: '7-11',
-    c: 'Cold Stone',
-    d: 'Bravo Pizza',
-    answer: 'a'
-},  
-{
-    question: `in the anime spy x family, what is the name of Loid's telepathic daughter?`,
-    a: `Yor Forger`,
-    b: 'Misty Forger',
-    c: 'Frankie Forger',
-    d: 'Anya Forger',
-    answer: 'd'
-},  
-{
-    question: `which one of these pokemon resist the ground type`,
-    a: `crustle`,
-    b: 'sunflora',
-    c: 'raichu',
-    d: 'quagsire',
-    answer: 'b'
-},  
-{
-    question: `in the show avatar: the last airbender, what is the last element that aang masters`,
-    a: `water`,
-    b: 'earth',
-    c: 'fire',
-    d: 'air',
-    answer: 'c'
-},  
-{
-    question: `the comic book hero anti-venom was created when which character used his healing powers on venom?`,
-    a: `deathstroke`,
-    b: 'magneto',
-    c: 'deadpool',
-    d: 'mr. negative',
-    answer: 'd'
-},  
-{
-    question: `which one of these clubs do not meet on a wednesday?`,
-    a: `game development club`,
-    b: 'glee club',
-    c: 'literary magazine',
-    d: 'tech science times',
-    answer: 'd'
-},  
-{
-    question: `what was the name given to minecraft update 1.16?`,
-    a: `combat update`,
-    b: 'nether update',
-    c: 'village & pillage update',
-    d: 'combat update',
-    answer: 'b'
-},  
-{
-    question: `taylor swifts boyfriend plays for which nfl team?`,
-    a: `green bay packers`,
-    b: 'dallas cowboys',
-    c: 'kansas city chiefs',
-    d: 'san francisco 49ers',
-    answer: 'c'
-},  
-{
-    question: `an elementary charge is equal to 10¹⁶ times...`,
-    a: `7.53`,
-    b: '1.32',
-    c: '1.60',
-    d: '9.81',
-    answer: 'c'
-},
-]
 
 
 router.get("/", async (req,res)=>{ 
