@@ -12,8 +12,10 @@ app.use(
 
 
 
+
+
 let trivia = [
-  {
+  {   
     question: `when was the first trailer for the indie game "OMORI" released?`,
     a: 2016,
     b: 2017,
@@ -588,6 +590,35 @@ let data = [
     }
   ]
 
+  let funnies = [
+    "Gosh darn it mom! Get out of my room, I'm ___!",
+    "New York City now has a new holiday where ___ is celebrated.",
+     "6 words or less that can make an entire group of people mad:",
+    "A remarkable achievement you probably won't list on your college applications:",
+   "You've seen Rozin without Rizz; now get ready for ____!",
+   "SITHS is making budget cuts; AP Statistics is now ___.",
+     "It's great that you have a degree in computer science and all, but *I* ___!",
+   "The hardest question on the AP CSP exam:",
+    'As Mr. Whalen once said, "___."',
+    "The 10th circle of Hell that nobody knows about:",
+    "What Duolingo does after you've broken your Russian streak:",
+     "The only thing you can remember from physics:",
+     "The only way out of an AP Science class is to ___.",
+    "On a shared testing day, a small number of teachers turn into ___.",
+     "It's not your fault you failed that exam, it's definitely ___.",
+    "'Fool me once, shame on you. Fool me twice, ___.'",
+    "You know the class is super boring when you end up ___.",
+     "The real reason Mr. Ferrigno decided to shave his beard:",
+    "STEM would actually be super fun if only it had ___.",
+     "The quickest way to become the most popular kid at Tech:",
+     "How do I file my taxes?! Tech never taught me that, only ___!",
+    "What seagulls are usually thinking about:",
+    "I can finally see the light, the end of ___!",
+   "A strange thing for a teacher to say while you're taking an exam:",
+   "The worst ringtone to play on your phone during an exam:",
+    "Okay wow, God just announced He is sick of hearing prayers about ___.",
+    "What's truly affecting your mental health today?",
+  ]
 
 
 router.get("/", async (req,res)=>{ 
@@ -604,6 +635,7 @@ router.get("/", async (req,res)=>{
 
 router.get("/:game/:id", async (req,res)=>{ 
     try{
+      console.log(funnies)
          getParam(res,req)
     }
     catch (error){
@@ -623,5 +655,9 @@ function getParam(res,req){
     if(req.params.game == 'dt'){
       res.setHeader("Access-Control-Allow-Origin", "*");
         res.json(data[req.params.id ])
+    }
+    if(req.params.game == 'ql'){
+      res.setHeader("Access-Control-Allow-Origin", "*");
+        res.json({prompt: funnies[req.params.id]})
     }
 }
